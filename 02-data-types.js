@@ -8,12 +8,12 @@
 let playerName = "John";
 console.log(playerName); // This will print "John"
 
-// Using single quotes
-let playerName = 'John';
+// Using single quotes 
+let playerName2 = 'John';
 console.log(playerName); // This will print "John"
 
 // Using backticks
-let playerName = `John`;
+let playerName3 = `John`;
 console.log(playerName); // This will print "John"
 
 /** Number **/
@@ -23,7 +23,7 @@ let score = 100;
 console.log(score); // This will print 100
 
 // Float
-let score = 100.5;
+let second_score = 100.5;
 console.log(score); // This will print 100.5
 
 /** Boolean **/
@@ -33,12 +33,12 @@ console.log(isGameOver); // This will print false
 
 /** Null **/
 
-let playerName = null;
+let playerName4 = null;
 console.log(playerName); // This will print null
 
 /** Undefined **/
 
-let playerName;
+let playerName5;
 
 console.log(playerName); // This will print undefined
 
@@ -78,5 +78,5 @@ function printPlayerName() {
 console.log(printPlayerName); // This will print [Function: printPlayerName]
 console.log(printPlayerName()); // This will print John
 
-
+module.export = { printPlayerName }
 

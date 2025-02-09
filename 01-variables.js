@@ -18,7 +18,7 @@ const PI = 3.14;
 // Using let
 function printName() {
     let playerName = "Jane"; // Variable is block-scoped within the function
-    console.log(playerName);
+    console.log("this is player name ", playerName);
 }
 // This will print "Jane"
 printName();
@@ -29,8 +29,9 @@ console.log(playerName);
 // Using let
 function printPlayerName() {
     // This will throw an error as let variables are not hoisted
-    console.log(playerName);
     let playerName = "John";
+    console.log(playerName);
+    
 }
 // This will print "undefined"
 printPlayerName();
@@ -71,3 +72,5 @@ printTeamName();
 // This will print "TeamA"
 console.log(teamName);
 
+
+module.export = { printName, printPlayerName, printGlobalName,updateScore, printTeamName }
